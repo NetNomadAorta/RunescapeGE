@@ -23,7 +23,7 @@ while True:
     latest = {}
     
     # replace data's id to corresponding name and defines parameters for latest
-    for i in range(len(list(responseLatest))-2): #delete the'-2'
+    for i in range(len(list(responseLatest))-4): #delete the'-2'
         latest[map[list(responseLatest)[i]]['name']] = { \
             'high': responseLatest[list(responseLatest)[i]]['high'], \
             'low': responseLatest[list(responseLatest)[i]]['low'], \
@@ -42,13 +42,12 @@ while True:
         unixToDate('lowTime', i)
     
     #type item names to search for market info
-    item1 = 'Emerald bolts'
-    item2 = 'Rune Javelin Heads'
+    item1 = 'Rune javelin heads'
+    item2 = 'Amethyst javelin heads'
     item3 = 'Abyssal bracelet(5)'
     item4 = 'Air Battlestaff'
     item5 = 'Onyx bolts (e)'
-    item6 = 'Sapphire ring'
-    item7 = 'Ring of recoil'
+    item6 = 'Onyx dragon bolts (e)'
     
     # function to show key 'item' and it's keys and values
     def show(item):
@@ -58,20 +57,20 @@ while True:
     
     # uses show function
     print('\n\n\n\n\n\n\n\n\n')
-    # show(item1)
+    show(item1)
     show(item2)
     show(item3)
     show(item4)
     show(item5)
     show(item6)
-    show(item7)
     
-    print()
-    lvl1Profit = latest['Ring of recoil'.lower()]['high'] \
-        - ( latest['Sapphire ring'.lower()]['high'] \
-        + latest['Cosmic rune'.lower()]['high'] \
-        + + latest['Water rune'.lower()]['high'] )
-    print('lvl-1 ring profit: ' + str(lvl1Profit))
+    # # prints profit from lvl-1 enchanting ring
+    # print()
+    # lvl1Profit = latest['Ring of recoil'.lower()]['high'] \
+    #     - ( latest['Sapphire ring'.lower()]['high'] \
+    #     + latest['Cosmic rune'.lower()]['high'] \
+    #     + + latest['Water rune'.lower()]['high'] )
+    # print('lvl-1 ring profit: ' + str(lvl1Profit))
     
     # name = 'mithril bolts'
     # show = np.array([ ['name', 'high', 'low','hightTime', 'lowTime', 'margin', 'id'],\
