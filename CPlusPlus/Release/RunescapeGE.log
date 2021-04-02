@@ -1,0 +1,8 @@
+﻿  jsoncpp.cpp
+  curl_json.cpp
+  RunescapeGEMain.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 1042 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  RunescapeGE.vcxproj -> C:\Users\troya\source\repos\RunescapeGE\Release\RunescapeGE.exe
