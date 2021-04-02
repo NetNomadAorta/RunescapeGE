@@ -123,15 +123,19 @@ int main()
         std::string item4 = "Air battlestaff";
         std::string item5 = "Onyx bolts (e)";
         std::string item6 = "Onyx dragon bolts (e)";
+        std::string item7 = "Emerald bracelet";
+        std::string item8 = "Emerald";
 
         // Uses show function to display item info
-        std::cout << "\n\n\n\n\n\n\n\n\n";
+        std::cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n";
         show(item1);
         show(item2);
         show(item3);
         show(item4);
         show(item5);
         show(item6);
+        show(item7);
+        show(item8);
 
         std::this_thread::sleep_for(std::chrono::seconds(5));
     }
